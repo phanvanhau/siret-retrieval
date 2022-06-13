@@ -1,0 +1,15 @@
+logging:
+  level:
+    root: INFO
+    com:
+      vphan:
+        microservices:
+          siret-retrieval: DEBUG
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+server:
+  port: 9000
