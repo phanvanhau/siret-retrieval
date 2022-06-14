@@ -13,3 +13,6 @@ management:
 
 server:
   port: 9000
+
+enterprise:
+  baseUrl: https://entreprise.data.gouv.fr
