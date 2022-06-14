@@ -20,9 +20,8 @@ public class Root {
 
   @GetMapping("/toto")
   public ResponseEntity<EnterpriseDetail> getToto() {
-    log.info("Request to root");
-    log.debug("This request must be forbidden");
-    return ResponseEntity.ok(this.enterpriseService.getEnterpriseDetail("97080195700014"));
+    log.info("[TOTO] - getToto");
+    return ResponseEntity.ok(this.enterpriseService.getEnterpriseDetail("97080195700014dd"));
   }
 
 }
