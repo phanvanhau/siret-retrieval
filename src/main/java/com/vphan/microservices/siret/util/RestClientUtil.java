@@ -1,4 +1,4 @@
-package com.vphan.microservices.learning.util;
+package com.vphan.microservices.siret.util;
 
 import org.slf4j.Logger;
 import org.springframework.web.client.RestClientException;

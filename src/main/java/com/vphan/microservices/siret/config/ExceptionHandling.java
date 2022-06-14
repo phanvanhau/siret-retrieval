@@ -1,7 +1,7 @@
-package com.vphan.microservices.learning.config;
+package com.vphan.microservices.siret.config;
 
-import com.vphan.microservices.learning.exception.BusinessException;
-import com.vphan.microservices.learning.exception.BusinessExceptionResponse;
+import com.vphan.microservices.siret.exception.BusinessException;
+import com.vphan.microservices.siret.exception.BusinessExceptionResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

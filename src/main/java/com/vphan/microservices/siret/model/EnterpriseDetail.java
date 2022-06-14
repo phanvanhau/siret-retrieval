@@ -1,4 +1,4 @@
-package com.vphan.microservices.learning.model;
+package com.vphan.microservices.siret.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

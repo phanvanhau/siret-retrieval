@@ -1,4 +1,4 @@
-package com.vphan.microservices.learning.config;
+package com.vphan.microservices.siret.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

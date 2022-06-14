@@ -1,4 +1,4 @@
-package com.vphan.microservices.learning;
+package com.vphan.microservices.siret;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

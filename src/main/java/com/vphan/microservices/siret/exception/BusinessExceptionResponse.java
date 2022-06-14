@@ -1,4 +1,4 @@
-package com.vphan.microservices.learning.exception;
+package com.vphan.microservices.siret.exception;
 
 import lombok.Data;
 

@@ -1,8 +1,8 @@
-package com.vphan.microservices.learning.service;
+package com.vphan.microservices.siret.service;
 
-import com.vphan.microservices.learning.client.EnterpriseClient;
-import com.vphan.microservices.learning.exception.BusinessException;
-import com.vphan.microservices.learning.model.EnterpriseDetail;
+import com.vphan.microservices.siret.client.EnterpriseClient;
+import com.vphan.microservices.siret.exception.BusinessException;
+import com.vphan.microservices.siret.model.EnterpriseDetail;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

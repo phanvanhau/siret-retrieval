@@ -1,8 +1,8 @@
-package com.vphan.microservices.learning.client;
+package com.vphan.microservices.siret.client;
 
-import com.vphan.microservices.learning.config.EnterpriseConfiguration;
-import com.vphan.microservices.learning.model.EnterpriseDetail;
-import com.vphan.microservices.learning.util.RestClientUtil;
+import com.vphan.microservices.siret.config.EnterpriseConfiguration;
+import com.vphan.microservices.siret.model.EnterpriseDetail;
+import com.vphan.microservices.siret.util.RestClientUtil;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;

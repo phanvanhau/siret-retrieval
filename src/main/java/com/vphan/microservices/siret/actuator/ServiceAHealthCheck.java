@@ -1,4 +1,4 @@
-package com.vphan.microservices.learning.actuator;
+package com.vphan.microservices.siret.actuator;
 
 import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;

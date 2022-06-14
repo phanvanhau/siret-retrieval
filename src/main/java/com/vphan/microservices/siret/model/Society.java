@@ -1,4 +1,4 @@
-package com.vphan.microservices.learning.model;
+package com.vphan.microservices.siret.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,7 +10,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class LegalUnit {
-  @JsonProperty("denomination")
-  private String name;
+public class Society {
+  private String id;
+  private String siren;
+  private String siret;
+  private String nic;
+  @JsonProperty("unite_legale")
+  private LegalUnit uniteLegale;
 }
