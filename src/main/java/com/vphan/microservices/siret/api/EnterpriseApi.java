@@ -16,7 +16,7 @@ public class EnterpriseApi {
 
   private final EnterpriseService enterpriseService;
 
-  @PostMapping("/enterprise/update")
+  @PostMapping("/enterprise/batchUpdate")
   public ResponseEntity<Void> updateEnterprise() {
     log.info("[Enterprise API] - updateEnterprise");
     this.enterpriseService.updateEnterprisesDetail();

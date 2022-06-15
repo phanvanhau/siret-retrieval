@@ -54,7 +54,8 @@ public abstract class AbstractFileRepository<T> {
     }
     if (index > 0) {
       this.entities.set(index, entity);
-      writeDB();
+    } else {
+      this.entities.add(entity);
     }
   }
 

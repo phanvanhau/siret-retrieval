@@ -13,4 +13,6 @@ import lombok.NoArgsConstructor;
 public class LegalUnit {
   @JsonProperty("denomination")
   private String name;
+  @JsonProperty("numero_tva_intra")
+  private String tvaNumber;
 }

@@ -28,7 +28,7 @@ public class EnterpriseRepository extends AbstractFileRepository<EnterpriseEntit
       return null;
     }
     try {
-      return new EnterpriseEntity(columns[0], columns[1], columns[2], columns[3], columns[4], Long.parseLong(columns[5]), columns[6]);
+      return new EnterpriseEntity(columns[0], columns[1], columns[2], columns[3], columns[4], columns[5], columns[6]);
     } catch (Exception e) {
       return null;
     }
@@ -37,7 +37,7 @@ public class EnterpriseRepository extends AbstractFileRepository<EnterpriseEntit
 
   @Override
   public String serializeEntity(EnterpriseEntity entity) {
-    return String.join(COLUMN_SEPARATOR, new String[] {entity.getId(), entity.getSiret(), entity.getNic(),entity.getFullName(), entity.getFullAddress(), String.valueOf(entity.getCreationDate()), entity.getTvaNumber()});
+    return String.join(COLUMN_SEPARATOR, new String[] {entity.getId(), entity.getSiret(), entity.getNic(),entity.getFullName(), entity.getFullAddress(),entity.getCreationDate(), entity.getTvaNumber()});
   }
 
   @Override

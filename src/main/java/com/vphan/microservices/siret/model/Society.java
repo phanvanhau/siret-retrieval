@@ -15,6 +15,14 @@ public class Society {
   private String siren;
   private String siret;
   private String nic;
+  @JsonProperty("date_debut")
+  private String creationDate;
+  @JsonProperty("geo_adresse")
+  private String geoAddress;
   @JsonProperty("unite_legale")
   private LegalUnit uniteLegale;
+
+  public String getFullAddress() {
+    return this.geoAddress;
+  }
 }
