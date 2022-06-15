@@ -42,7 +42,7 @@ public class EnterpriseRepository extends AbstractFileRepository<EnterpriseEntit
 
   @Override
   public boolean isEqual(EnterpriseEntity entity1, EnterpriseEntity entity2) {
-    return entity1 != null && entity2 != null && entity1.getId().equals(entity2.getId());
+    return entity1 != null && entity2 != null && entity1.getId() != null && entity1.getId().equals(entity2.getId());
   }
 
 }

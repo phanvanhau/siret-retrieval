@@ -21,6 +21,7 @@ java -jar target/siret-retrieval-0.0.1-SNAPSHOT.jar
     - The client API could be imported by other microservices without the need for the caller to add more code to build the HTTP request
     - The server API would be deployed independently
 - The process updating enterprise data would be heavy if the number of registered enterprise is important.
-The current implementation is done with non-blocking mechasnim but without the need for the caller to know the process status, also detailed failure if any.
+The current implementation has been done with non-blocking mechanism but without the need for the caller to know the process status, also detailed failure if any.
     - Use Spring Batch could be more relevant for this kind of job
     - Return the process id and provide another endpoint for the caller to check the job status. 
+- Nevertheless, the end to end testing could be added to the project also (Example: using https://rest-assured.io/)
