@@ -16,3 +16,6 @@ server:
 
 enterprise:
   baseUrl: https://entreprise.data.gouv.fr
+
+db:
+  fileLocation: ${DB_FILE_LOCATION}

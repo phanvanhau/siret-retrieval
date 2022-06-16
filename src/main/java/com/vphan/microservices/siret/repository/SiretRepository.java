@@ -1,24 +1,24 @@
 package com.vphan.microservices.siret.repository;
 
+import com.vphan.microservices.siret.config.DBConfiguration;
 import com.vphan.microservices.siret.model.EnterpriseDetail;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
 
 @Slf4j
+@AllArgsConstructor
 @Repository
 public class SiretRepository extends AbstractFileRepository<String>{
   private static final String SIRET_TABLE_SOURCE = "siret_table.csv";
 
+  private final DBConfiguration dbConfiguration;
+
   @PostConstruct
   public void loadDB() {
-    super.loadDB();
-  }
-
-  @Override
-  public String getTableName() {
-    return SIRET_TABLE_SOURCE;
+    super.loadDB(dbConfiguration.getFileLocation() +  SIRET_TABLE_SOURCE);
   }
 
   @Override

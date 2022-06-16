@@ -1,24 +1,24 @@
 package com.vphan.microservices.siret.repository;
 
+import com.vphan.microservices.siret.config.DBConfiguration;
 import com.vphan.microservices.siret.repository.entity.EnterpriseEntity;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
 
 @Slf4j
+@AllArgsConstructor
 @Repository
 public class EnterpriseRepository extends AbstractFileRepository<EnterpriseEntity>{
   private static final String ENTERPRISE_TABLE_SOURCE = "enterprise_table.csv";
 
+  private final DBConfiguration dbConfiguration;
+
   @PostConstruct
   public void loadDB() {
-    super.loadDB();
-  }
-
-  @Override
-  public String getTableName() {
-    return ENTERPRISE_TABLE_SOURCE;
+    super.loadDB(dbConfiguration.getFileLocation() + ENTERPRISE_TABLE_SOURCE);
   }
 
   @Override

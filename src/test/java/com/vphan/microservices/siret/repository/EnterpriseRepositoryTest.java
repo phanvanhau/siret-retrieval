@@ -10,7 +10,7 @@ public class EnterpriseRepositoryTest {
 
   @BeforeEach
   public void setup() {
-    this.enterpriseRepository = new EnterpriseRepository();
+    this.enterpriseRepository = new EnterpriseRepository(null);
   }
   @Test
   public void deserializeEntity() {

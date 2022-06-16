@@ -1,6 +1,6 @@
 This is home assignment for enterprise SIRET retrieval
 # Build instructions
-## Buid and run with Docker
+## Buid and run with Docker (easiest way)
 At the root of the project
 ```
 chmod +x ./docker/build.sh
@@ -11,9 +11,9 @@ docker run -it --rm --name siret-retrieval -p 9000:9000 siret-retrievel:0.0.1
 ```
 ./mvnw clean package
 
-./mvnw spring-boot:run
+DB_FILE_LOCATION={PATH_TO_YOUR_DB_FOLDER} & ./mvnw spring-boot:run
 OR
-java -jar target/siret-retrieval-0.0.1-SNAPSHOT.jar
+DB_FILE_LOCATION={PATH_TO_YOUR_DB_FOLDER} & java -jar target/siret-retrieval-0.0.1-SNAPSHOT.jar
 ```
 
 # How to improve the project
