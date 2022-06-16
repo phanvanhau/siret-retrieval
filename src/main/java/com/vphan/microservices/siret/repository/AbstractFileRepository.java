@@ -25,11 +25,6 @@ public abstract class AbstractFileRepository<T> {
     this.dbFileLocation = dbFileLocation;
     this.entities = new ArrayList<>();
 
-//    ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-//    InputStream is = classloader.getResourceAsStream(getTableName());
-//    this.entities = new ArrayList<>();
-//    InputStreamReader streamReader = new InputStreamReader(is, StandardCharsets.UTF_8);
-//    BufferedReader reader = new BufferedReader(streamReader);
     try {
       BufferedReader reader = new BufferedReader(new FileReader(dbFileLocation));
       for (String line; (line = reader.readLine()) != null;) {
